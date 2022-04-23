@@ -35,9 +35,10 @@ def load_json():
     return data_object
 
 
-def save_json(output):
+def save_json(output, pretty=True):
     file = open(DATA_FILE, "w")
-    content = json.dumps(output)
+    indent = 4 if pretty else 0
+    content = json.dumps(output, indent=indent)
     file.write(content)
     file.close()
 
