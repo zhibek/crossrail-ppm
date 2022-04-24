@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
-DATA_FILE = 'data/output.json'
+DATA_FILE = '../data/output.json'
 
 # https://api.rtt.io/api/v1/json/search/BDS  # Note: Cannot use API as detailed view not available
 SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual"
