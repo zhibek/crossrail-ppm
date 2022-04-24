@@ -19,17 +19,17 @@ jobs:
         pip install -r requirements.txt
     - name: Poll & Transform
       run: |
-        cd src && python3 main.py && cd ..
+        cd script && python3 main.py && cd ..
     - name: Set variable to check if anything changed
       id: is_updated
       run: |-
-        echo "##[set-output name=changed;]$(git diff --quiet HEAD data/*.json; echo $?)"
+        echo "##[set-output name=changed;]$(git diff --quiet HEAD public/*.json; echo $?)"
     - name: Commit files
       if: steps.is_updated.outputs.changed != 0
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data
+        git add public
         git commit -m "Update at $(date +'%Y-%m-%d %H:%M')"
     - name: Push changes
       if: steps.is_updated.outputs.changed != 0
