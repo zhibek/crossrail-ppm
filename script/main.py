@@ -12,17 +12,15 @@ SOURCE_PATH = "div.servicelist > a.service"
 
 CHECKS = [
     {
-        # "station": "BDS",
-        "station": "PDX",
+        "station_code": "PDX",
+        "station_name": "Paddington Crossrail",
         "origin": "Abbey Wood (Crossrail)",
-        # "destination": "Paddington Crossrail",
         "destination": "Terminates here",
     },
     {
-        # "station": "WWC",
-        "station": "ABX",
+        "station_code": "ABX",
+        "station_name": "Abbey Wood (Crossrail)",
         "origin": "Paddington Crossrail",
-        # "destination": "Abbey Wood (Crossrail)",
         "destination": "Terminates here",
     },
 ]
@@ -43,9 +41,9 @@ def save_json(output, pretty=True):
     file.close()
 
 
-def process_services(date, station, origin, destination):
+def process_services(date, station_code, origin, destination):
     date_parts = date.split("-")
-    url = SOURCE_TEMPLATE_URL.format(station, date_parts[0], date_parts[1], date_parts[2])
+    url = SOURCE_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2])
     print("Requesting URL: {}".format(url))
     result = requests.get(url)
     xml = result.content
@@ -160,23 +158,24 @@ def main():
         output = {}
 
     for check in CHECKS:
-        station = check["station"]
-        print("Checking station: {}".format(station))
-        services = process_services(date, station, check["origin"], check["destination"])
+        station_code = check["station_code"]
+        print("Checking station code: {}".format(station_code))
+        services = process_services(date, station_code, check["origin"], check["destination"])
         analysis = analyse_services(services)
         print(analysis)
 
-        if station not in output:
-            output[station] = {
+        if station_code not in output:
+            output[station_code] = {
                 "meta": {
-                    "station": station,
+                    "station_code": station_code,
+                    "station_name": check["station_name"],
                     "origin": check["origin"],
                     "destination": check["destination"],
                 },
                 "dates": {},
             }
 
-        output[station]["dates"][date] = {
+        output[station_code]["dates"][date] = {
             "date": date,
             "analysis": analysis,
             "services": services,
