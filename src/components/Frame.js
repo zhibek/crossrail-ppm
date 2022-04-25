@@ -6,7 +6,7 @@ function Frame({ children }) {
   return (
     <>
       <CssBaseline />
-      <main>
+      <main style={{ padding: 20 }}>
         {children}
       </main>
     </>
