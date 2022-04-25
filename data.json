@@ -1,7 +1,8 @@
 {
     "PDX": {
         "meta": {
-            "station": "PDX",
+            "station_code": "PDX",
+            "station_name": "Paddington Crossrail",
             "origin": "Abbey Wood (Crossrail)",
             "destination": "Terminates here"
         },
@@ -4134,7 +4135,8 @@
     },
     "ABX": {
         "meta": {
-            "station": "ABX",
+            "station_code": "ABX",
+            "station_name": "Abbey Wood (Crossrail)",
             "origin": "Paddington Crossrail",
             "destination": "Terminates here"
         },
