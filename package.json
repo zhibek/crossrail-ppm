@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "eslint-config-airbnb": "^18.2.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
@@ -15,13 +16,29 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": "off",
+      "react/prop-types": "off",
+      "react/no-array-index-key": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/destructuring-assignment": "off",
+      "func-names": "off",
+      "no-plusplus": "off",
+      "import/prefer-default-export": "off",
+      "consistent-return": "off",
+      "no-param-reassign": "off",
+      "no-mixed-operators": "off",
+      "no-console": "off"
+    }
   },
   "browserslist": {
     "production": [
