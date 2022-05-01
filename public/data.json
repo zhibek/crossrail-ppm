@@ -8221,6 +8221,17 @@
                         "delay": 0
                     }
                 ]
+            },
+            "2022-04-30": {
+                "date": "2022-04-30",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
             }
         }
     },
@@ -16446,6 +16457,17 @@
                         "delay": 0
                     }
                 ]
+            },
+            "2022-04-30": {
+                "date": "2022-04-30",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
             }
         }
     }
