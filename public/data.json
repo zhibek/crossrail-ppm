@@ -15729,6 +15729,17 @@
                     "percent_ontime": null
                 },
                 "services": []
+            },
+            "2022-10-26": {
+                "date": "2022-10-26",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
             }
         }
     },
@@ -31356,6 +31367,17 @@
             },
             "2022-10-25": {
                 "date": "2022-10-25",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
+            },
+            "2022-10-26": {
+                "date": "2022-10-26",
                 "analysis": {
                     "total_services": 0,
                     "total_ran": 0,
