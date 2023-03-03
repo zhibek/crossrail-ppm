@@ -17104,6 +17104,17 @@
                     "percent_ontime": null
                 },
                 "services": []
+            },
+            "2023-03-02": {
+                "date": "2023-03-02",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
             }
         }
     },
@@ -34106,6 +34117,17 @@
             },
             "2023-03-01": {
                 "date": "2023-03-01",
+                "analysis": {
+                    "total_services": 0,
+                    "total_ran": 0,
+                    "total_ontime": 0,
+                    "percent_ran": null,
+                    "percent_ontime": null
+                },
+                "services": []
+            },
+            "2023-03-02": {
+                "date": "2023-03-02",
                 "analysis": {
                     "total_services": 0,
                     "total_ran": 0,
