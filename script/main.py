@@ -2,28 +2,31 @@ import sys
 import json
 import requests
 from bs4 import BeautifulSoup
+import unicodedata
 import datetime
 
 DATA_FILE = '../public/data.json'
 
 # https://api.rtt.io/api/v1/json/search/BDS  # Note: Cannot use API as detailed view not available
-SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual"
+SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual&toc=XR"
 SOURCE_PATH = "div.servicelist > a.service"
 
 CHECKS = [
     {
-        "station_code": "PDX",
-        "station_name": "Paddington Crossrail",
-        "origin": "Abbey Wood (Crossrail)",
-        "destination": "Terminates here",
+        "station_code": "PAD",
+        "station_name": "London Paddington",
+        "origin": "Abbey Wood",
+        "destination": None,
     },
     {
-        "station_code": "ABX",
-        "station_name": "Abbey Wood (Crossrail)",
-        "origin": "Paddington Crossrail",
+        "station_code": "ABW",
+        "station_name": "Abbey Wood",
+        "origin": None,
         "destination": "Terminates here",
     },
 ]
+
+VERBOSE = False
 
 
 def load_json():
@@ -41,7 +44,7 @@ def save_json(output, pretty=True):
     file.close()
 
 
-def process_services(date, station_code, origin, destination):
+def process_services(date, station_code, origin=None, destination=None):
     date_parts = date.split("-")
     url = SOURCE_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2])
     print("Requesting URL: {}".format(url))
@@ -56,10 +59,10 @@ def process_services(date, station_code, origin, destination):
     for data in results:
         service_origin = safe_select_single(data, "div.location.o")
         service_destination = safe_select_single(data, "div.location.d")
-        if service_origin != origin or service_destination != destination:
+        if (origin is not None and service_origin != origin) or (destination is not None and service_destination != destination):
             continue
 
-        time_planned = safe_select_single(data, "div.time.plan.a.wtt")
+        time_planned = safe_select_single(data, "div.time.plan.a.gbtt")
         time_actual = safe_select_single(data, "div.time.real.a.act")
 
         ran = False
@@ -103,6 +106,14 @@ def check_service_delay(time_actual, time_planned):
     return delay
 
 
+def normalise_fractions(input):
+    if not input[-1].isdecimal():
+        main = float(input[:-1])
+        fraction = float(unicodedata.numeric(input[-1]))
+        return main + fraction
+    return float(input)
+
+
 def parse_service_time(time):
     if not time:
         return False
@@ -116,7 +127,8 @@ def parse_service_time(time):
     if hours == "00":
         hours = "24"
 
-    total = (int(hours) * 60) + float(mins)
+
+    total = (int(hours) * 60) + normalise_fractions(mins)
 
     if total < 1:
         return False
@@ -161,6 +173,8 @@ def main():
         station_code = check["station_code"]
         print("Checking station code: {}".format(station_code))
         services = process_services(date, station_code, check["origin"], check["destination"])
+        if VERBOSE:
+            print(services)
         analysis = analyse_services(services)
         print(analysis)
 
