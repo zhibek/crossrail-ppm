@@ -18,7 +18,7 @@ function PpmTable({ station }) {
   const classes = useStyles();
 
   const formatPercent = (number) => (
-    number ? `${(number.toFixed(4) * 100)}%` : '-'
+    number ? `${(Math.round(number.toFixed(4) * 10000) / 100)}%` : '-'
   );
 
   const formatWeekday = (isoDate) => {

@@ -47,7 +47,7 @@ function DataScreen({ data }) {
         {Object.entries(data).map(([stationKey, station]) => (
           <Grid item key={stationKey} xs={12} align="center">
             <Card className={classes.root}>
-              <CardHeader title={`Arriving at ${station.meta.station_name}, from ${station.meta.origin}`} />
+              <CardHeader title={`Arriving at ${station.meta.station_name}, from ${station.meta.origin ?? '(any)'}, to ${station.meta.destination ?? '(any)'}`} />
               <CardContent>
                 <PpmTable station={station} />
               </CardContent>
