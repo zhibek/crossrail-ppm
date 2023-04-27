@@ -8,11 +8,23 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     maxHeight: 420,
   },
-});
+  rowSuccess: {
+    backgroundColor: theme.palette.success.main,
+    color: theme.palette.success.contrastText,
+  },
+  rowWarning: {
+    backgroundColor: theme.palette.warning.main,
+    color: theme.palette.warning.contrastText,
+  },
+  rowError: {
+    backgroundColor: theme.palette.error.main,
+    color: theme.palette.error.contrastText,
+  },
+}));
 
 function PpmTable({ station }) {
   const classes = useStyles();
@@ -24,6 +36,17 @@ function PpmTable({ station }) {
   const formatWeekday = (isoDate) => {
     const date = new Date(isoDate);
     return date.toLocaleDateString('default', { weekday: 'long' });
+  };
+
+  const rowClass = (onTimePercent) => {
+    console.log(onTimePercent);
+    if (onTimePercent >= 0.95) {
+      return classes.rowSuccess;
+    }
+    if (onTimePercent >= 0.8) {
+      return classes.rowWarning;
+    }
+    return classes.rowError;
   };
 
   return (!!station
@@ -41,7 +64,7 @@ function PpmTable({ station }) {
           </TableHead>
           <TableBody>
             {Object.entries(station.dates).reverse().map(([dateKey, date]) => (
-              <TableRow key={dateKey}>
+              <TableRow key={dateKey} classes={{ root: rowClass(date.analysis.percent_ontime) }}>
                 <TableCell component="th" scope="row">{date.date}</TableCell>
                 <TableCell>{formatWeekday(date.date)}</TableCell>
                 <TableCell>{date.analysis.total_services}</TableCell>
