@@ -8,7 +8,7 @@ import datetime
 DATA_FILE = '../public/data.json'
 
 # https://api.rtt.io/api/v1/json/search/BDS  # Note: Cannot use API as detailed view not available
-SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual&toc=XR"
+SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual&toc={}"
 SOURCE_PATH = "div.servicelist > a.service"
 
 CHECKS = [
@@ -17,12 +17,14 @@ CHECKS = [
         "station_name": "London Paddington",
         "origin": "Abbey Wood",
         "destination": None,
+        "toc": "XR",
     },
     {
         "station_code": "ABW",
         "station_name": "Abbey Wood",
         "origin": None,
         "destination": "Terminates here",
+        "toc": "XR",
     },
 ]
 
@@ -44,9 +46,9 @@ def save_json(output, pretty=True):
     file.close()
 
 
-def process_services(date, station_code, origin=None, destination=None):
+def process_services(date, station_code, toc, origin=None, destination=None):
     date_parts = date.split("-")
-    url = SOURCE_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2])
+    url = SOURCE_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2], toc)
     print("Requesting URL: {}".format(url))
     result = requests.get(url)
     xml = result.content
@@ -172,7 +174,7 @@ def main():
     for check in CHECKS:
         station_code = check["station_code"]
         print("Checking station code: {}".format(station_code))
-        services = process_services(date, station_code, check["origin"], check["destination"])
+        services = process_services(date, station_code, check["toc"], check["origin"], check["destination"])
         if VERBOSE:
             print(services)
         analysis = analyse_services(services)
