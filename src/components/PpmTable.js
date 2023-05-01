@@ -53,7 +53,7 @@ function PpmTable({ station }) {
     return date.toLocaleDateString('default', { weekday: 'long' });
   };
 
-  const rowClass = (onTimePercent) => {
+  const dateRowClass = (onTimePercent) => {
     if (onTimePercent >= 0.95) {
       return classes.rowSuccess;
     }
@@ -61,6 +61,16 @@ function PpmTable({ station }) {
       return classes.rowWarning;
     }
     return classes.rowError;
+  };
+
+  const serviceRowClass = (service) => {
+    if (!service.ran) {
+      return classes.rowError;
+    }
+    if (!service.ontime) {
+      return classes.rowWarning;
+    }
+    return classes.rowSuccess;
   };
 
   const serviceStatus = (service) => {
@@ -90,7 +100,12 @@ function PpmTable({ station }) {
           <TableBody>
             {Object.entries(station.dates).reverse().map(([dateKey, date]) => (
               <>
-                <TableRow key={dateKey} classes={{ root: rowClass(date.analysis.percent_ontime) }}>
+                <TableRow
+                  key={dateKey}
+                  classes={{
+                    root: dateRowClass(date.analysis.percent_ontime),
+                  }}
+                >
                   <TableCell style={{ width: '20px' }}>
                     <IconButton aria-label="expand row" size="small" onClick={() => toggleExpand(dateKey)}>
                       {checkExpand(dateKey) ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
@@ -103,7 +118,7 @@ function PpmTable({ station }) {
                   <TableCell>{formatPercent(date.analysis.percent_ontime)}</TableCell>
                 </TableRow>
                 <TableRow key={`extra-${dateKey}`}>
-                  <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={5}>
+                  <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
                     <Collapse in={checkExpand(dateKey)} timeout="auto" unmountOnExit>
                       <Table stickyHeader>
                         <TableHead>
@@ -116,7 +131,7 @@ function PpmTable({ station }) {
                         </TableHead>
                         <TableBody>
                           {Object.entries(date.services).map(([serviceKey, service]) => (
-                            <TableRow key={serviceKey}>
+                            <TableRow key={serviceKey} classes={{ root: serviceRowClass(service) }}>
                               <TableCell>{service.planned ?? '-'}</TableCell>
                               <TableCell>{service.actual ?? '-'}</TableCell>
                               <TableCell>{service.delay ?? '-'}</TableCell>
