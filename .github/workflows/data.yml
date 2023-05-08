@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -35,4 +37,4 @@ jobs:
       if: steps.is_updated.outputs.changed != 0
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.PAT}}
+        github_token: ${{ secrets.PAT }}
