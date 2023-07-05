@@ -1,15 +1,14 @@
+import os
 import sys
 import json
 import requests
-from bs4 import BeautifulSoup
 import unicodedata
 import datetime
 
 DATA_FILE = '../public/data.json'
 
-# https://api.rtt.io/api/v1/json/search/BDS  # Note: Cannot use API as detailed view not available
-SOURCE_TEMPLATE_URL = "https://www.realtimetrains.co.uk/search/detailed/gb-nr:{}/{}-{}-{}/0800-2000?stp=WVS&show=all&order=actual&toc={}"
-SOURCE_PATH = "div.servicelist > a.service"
+API_TEMPLATE_URL = "https://api.rtt.io/api/v1/json/search/{}/{}/{}/{}/arrivals"
+API_KEY = os.environ["API_KEY"]
 
 CHECKS = [
     {
@@ -23,7 +22,7 @@ CHECKS = [
         "station_code": "ABW",
         "station_name": "Abbey Wood",
         "origin": None,
-        "destination": "Terminates here",
+        "destination": "Abbey Wood",
         "toc": "XR",
     },
 ]
@@ -48,24 +47,35 @@ def save_json(output, pretty=True):
 
 def process_services(date, station_code, toc, origin=None, destination=None):
     date_parts = date.split("-")
-    url = SOURCE_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2], toc)
+    url = API_TEMPLATE_URL.format(station_code, date_parts[0], date_parts[1], date_parts[2])
     print("Requesting URL: {}".format(url))
-    result = requests.get(url)
-    xml = result.content
+    headers = {"Authorization": "Basic {}".format(API_KEY)}
+    result = requests.get(url, headers=headers)
 
-    soup = BeautifulSoup(xml, features="lxml")
-    results = soup.select(SOURCE_PATH)
+    if result.status_code != 200:
+        raise Exception("Cannot retrieve results!")
+
+    raw = result.content
+    parsed = json.loads(raw)
+    results = parsed["services"]
     print("Found {} total services".format(len(results)))
 
     items = []
     for data in results:
-        service_origin = safe_select_single(data, "div.location.o")
-        service_destination = safe_select_single(data, "div.location.d")
-        if (origin is not None and service_origin != origin) or (destination is not None and service_destination != destination):
+        service_toc = data["atocCode"]
+        service_origin = data["locationDetail"]["origin"][0]["description"]
+        service_destination = data["locationDetail"]["destination"][0]["description"]
+        if toc is not None and service_toc != toc:
+            continue
+        elif origin is not None and service_origin != origin:
+            continue
+        elif destination is not None and service_destination != destination:
             continue
 
-        time_planned = safe_select_single(data, "div.time.plan.a.gbtt")
-        time_actual = safe_select_single(data, "div.time.real.a.act")
+        time_planned = data["locationDetail"]["gbttBookedArrival"]
+        time_actual = data["locationDetail"]["realtimeArrival"] if data["locationDetail"]["realtimeArrivalActual"] else None
+        if not service_in_time_scope(time_planned):
+            continue
 
         ran = False
         ontime = False
@@ -89,11 +99,12 @@ def process_services(date, station_code, toc, origin=None, destination=None):
     return items
 
 
-def safe_select_single(data, selector):
-    result = data.select(selector)
-    if not result:
-        return None
-    return result[0].string
+def service_in_time_scope(time_planned):
+    hours = time_planned[0:2]
+    hours = int(hours)
+    if hours < 8 or hours > 19:
+        return False
+    return True
 
 
 def check_service_delay(time_actual, time_planned):
@@ -187,6 +198,7 @@ def main():
                     "station_name": check["station_name"],
                     "origin": check["origin"],
                     "destination": check["destination"],
+                    "toc": check["toc"],
                 },
                 "dates": {},
             }

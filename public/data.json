@@ -4,7 +4,8 @@
             "station_code": "PAD",
             "station_name": "London Paddington",
             "origin": "Abbey Wood",
-            "destination": null
+            "destination": null,
+            "toc": "XR"
         },
         "dates": {
             "2023-04-22": {
@@ -54977,7 +54978,8 @@
             "station_code": "ABW",
             "station_name": "Abbey Wood",
             "origin": null,
-            "destination": "Terminates here"
+            "destination": "Abbey Wood",
+            "toc": "XR"
         },
         "dates": {
             "2023-04-22": {
