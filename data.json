@@ -54166,6 +54166,809 @@
                         "delay": 16.0
                     }
                 ]
+            },
+            "2023-07-04": {
+                "date": "2023-07-04",
+                "analysis": {
+                    "total_services": 113,
+                    "total_ran": 112,
+                    "total_ontime": 104,
+                    "percent_ran": 0.9911504424778761,
+                    "percent_ontime": 0.9203539823008849
+                },
+                "services": [
+                    {
+                        "planned": "0803",
+                        "actual": "0802\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0808",
+                        "actual": "0807\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0813",
+                        "actual": "0813\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "0818",
+                        "actual": "0817\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0823",
+                        "actual": "0824\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.5
+                    },
+                    {
+                        "planned": "0828",
+                        "actual": "0827\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0833",
+                        "actual": "0832\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0838",
+                        "actual": "0838\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "0843",
+                        "actual": "0845\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.5
+                    },
+                    {
+                        "planned": "0848",
+                        "actual": "0849\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.5
+                    },
+                    {
+                        "planned": "0853",
+                        "actual": "0854\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.25
+                    },
+                    {
+                        "planned": "0858",
+                        "actual": "0858\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "0903",
+                        "actual": "0903\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "0908",
+                        "actual": "0907\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0913",
+                        "actual": "0912\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0918",
+                        "actual": "0917\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0923",
+                        "actual": "0922\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0929",
+                        "actual": "0928\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0935",
+                        "actual": "0935",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "0941",
+                        "actual": "0946",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 5.0
+                    },
+                    {
+                        "planned": "0947",
+                        "actual": "0948\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.75
+                    },
+                    {
+                        "planned": "0953",
+                        "actual": "0953\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "0959",
+                        "actual": "0958\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1005",
+                        "actual": "1007\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.5
+                    },
+                    {
+                        "planned": "1011",
+                        "actual": "1010\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1017",
+                        "actual": "1016\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1023",
+                        "actual": "1022\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1031",
+                        "actual": "1030\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1038",
+                        "actual": "1037\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1046",
+                        "actual": "1045\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1053",
+                        "actual": "1052\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1101",
+                        "actual": "1100\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1108",
+                        "actual": "1108",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1116",
+                        "actual": "1116",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1123",
+                        "actual": "1123",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1131",
+                        "actual": "1130\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1138",
+                        "actual": "1138",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1146",
+                        "actual": "1146",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1153",
+                        "actual": "1153",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1201",
+                        "actual": "1200\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1208",
+                        "actual": "1207\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1216",
+                        "actual": "1215\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1223",
+                        "actual": "1223",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1231",
+                        "actual": "1231",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1238",
+                        "actual": "1237\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1246",
+                        "actual": "1245\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1253",
+                        "actual": "1252\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1301",
+                        "actual": "1300\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1308",
+                        "actual": "1307\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1316",
+                        "actual": "1315\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1323",
+                        "actual": "1322\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1331",
+                        "actual": "1331",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1338",
+                        "actual": "1337\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1346",
+                        "actual": "1345\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1353",
+                        "actual": "1352\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1401",
+                        "actual": "1400\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1408",
+                        "actual": "1407\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1416",
+                        "actual": "1416",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1423",
+                        "actual": "1423",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1431",
+                        "actual": "1431",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1438",
+                        "actual": "1440",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.0
+                    },
+                    {
+                        "planned": "1446",
+                        "actual": "1445\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1453",
+                        "actual": "1452\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1501",
+                        "actual": "1500\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1508",
+                        "actual": "1508",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1516",
+                        "actual": "1515\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1523",
+                        "actual": "1522\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1531",
+                        "actual": "1531",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1538",
+                        "actual": "1537\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1546",
+                        "actual": "1545\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1553",
+                        "actual": "1552\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1601",
+                        "actual": "1601",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1608",
+                        "actual": "1607\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1616",
+                        "actual": "1616",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1623",
+                        "actual": "1622\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1629",
+                        "actual": "1639\u00be",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 10.75
+                    },
+                    {
+                        "planned": "1635",
+                        "actual": "1643\u00bc",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 8.25
+                    },
+                    {
+                        "planned": "1641",
+                        "actual": "1647\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 6.5
+                    },
+                    {
+                        "planned": "1647",
+                        "actual": "1654\u00bc",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 7.25
+                    },
+                    {
+                        "planned": "1653",
+                        "actual": "1656\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 3.25
+                    },
+                    {
+                        "planned": "1659",
+                        "actual": "1700\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.75
+                    },
+                    {
+                        "planned": "1705",
+                        "actual": "1704\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1710",
+                        "actual": "1709\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1715",
+                        "actual": "1726\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 11.5
+                    },
+                    {
+                        "planned": "1725",
+                        "actual": "1728\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 3.75
+                    },
+                    {
+                        "planned": "1735",
+                        "actual": null,
+                        "ran": false,
+                        "ontime": false,
+                        "delay": null
+                    },
+                    {
+                        "planned": "1720",
+                        "actual": "1735\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 15.5
+                    },
+                    {
+                        "planned": "1730",
+                        "actual": "1737",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 7.0
+                    },
+                    {
+                        "planned": "1740",
+                        "actual": "1744\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 4.25
+                    },
+                    {
+                        "planned": "1745",
+                        "actual": "1747",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.0
+                    },
+                    {
+                        "planned": "1750",
+                        "actual": "1749\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1755",
+                        "actual": "1756\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.5
+                    },
+                    {
+                        "planned": "1800",
+                        "actual": "1802\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.75
+                    },
+                    {
+                        "planned": "1805",
+                        "actual": "1806\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.25
+                    },
+                    {
+                        "planned": "1810",
+                        "actual": "1809\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1815",
+                        "actual": "1814",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1820",
+                        "actual": "1822",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.0
+                    },
+                    {
+                        "planned": "1825",
+                        "actual": "1826\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.75
+                    },
+                    {
+                        "planned": "1830",
+                        "actual": "1831\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.5
+                    },
+                    {
+                        "planned": "1835",
+                        "actual": "1837\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.5
+                    },
+                    {
+                        "planned": "1841",
+                        "actual": "1840\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1847",
+                        "actual": "1847",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1853",
+                        "actual": "1854\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.5
+                    },
+                    {
+                        "planned": "1859",
+                        "actual": "1900",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.0
+                    },
+                    {
+                        "planned": "1905",
+                        "actual": "1904\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1911",
+                        "actual": "1911\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "1917",
+                        "actual": "1917",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1923",
+                        "actual": "1922\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1929",
+                        "actual": "1929",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1935",
+                        "actual": "1934\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1941",
+                        "actual": "1940\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1947",
+                        "actual": "1946\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1953",
+                        "actual": "1952\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    }
+                ]
             }
         }
     },
@@ -109566,6 +110369,837 @@
                         "ran": true,
                         "ontime": true,
                         "delay": 4.25
+                    }
+                ]
+            },
+            "2023-07-04": {
+                "date": "2023-07-04",
+                "analysis": {
+                    "total_services": 117,
+                    "total_ran": 114,
+                    "total_ontime": 101,
+                    "percent_ran": 0.9743589743589743,
+                    "percent_ontime": 0.8632478632478633
+                },
+                "services": [
+                    {
+                        "planned": "0802",
+                        "actual": "0801\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0808",
+                        "actual": "0806\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0813",
+                        "actual": "0811\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0818",
+                        "actual": "0816\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0823",
+                        "actual": "0822",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0828",
+                        "actual": "0826\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0833",
+                        "actual": "0832",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0838",
+                        "actual": "0836\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0843",
+                        "actual": "0841\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0848",
+                        "actual": "0849",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.0
+                    },
+                    {
+                        "planned": "0853",
+                        "actual": "0852",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0858",
+                        "actual": "0857\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0903",
+                        "actual": "0912",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 9.0
+                    },
+                    {
+                        "planned": "0908",
+                        "actual": "0914\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 6.5
+                    },
+                    {
+                        "planned": "0913",
+                        "actual": "0919\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 6.5
+                    },
+                    {
+                        "planned": "0918",
+                        "actual": "0924\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 6.5
+                    },
+                    {
+                        "planned": "0923",
+                        "actual": "0925\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.25
+                    },
+                    {
+                        "planned": "0928",
+                        "actual": "0928\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "0933",
+                        "actual": "0931\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "0938",
+                        "actual": "0938",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "0944",
+                        "actual": "0944\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "0950",
+                        "actual": "0950",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "0956",
+                        "actual": "0956",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": null,
+                        "actual": null,
+                        "ran": false,
+                        "ontime": false,
+                        "delay": null
+                    },
+                    {
+                        "planned": "1004",
+                        "actual": "1004",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1008",
+                        "actual": "1007\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1014",
+                        "actual": "1013",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1020",
+                        "actual": "1020",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1026",
+                        "actual": "1026",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1034",
+                        "actual": "1034",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1041",
+                        "actual": "1041",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1049",
+                        "actual": "1049",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1056",
+                        "actual": "1055\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1104",
+                        "actual": "1104",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1111",
+                        "actual": "1110\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1119",
+                        "actual": "1119\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1126",
+                        "actual": "1125\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1134",
+                        "actual": "1134",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1141",
+                        "actual": "1140\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1149",
+                        "actual": "1149",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1156",
+                        "actual": "1155\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1204",
+                        "actual": "1204\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1211",
+                        "actual": "1211",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1219",
+                        "actual": "1219",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1226",
+                        "actual": "1225\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1234",
+                        "actual": "1234",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1241",
+                        "actual": "1241",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1249",
+                        "actual": "1249",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1256",
+                        "actual": "1256",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1304",
+                        "actual": "1304",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1311",
+                        "actual": "1310\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1319",
+                        "actual": "1319",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1326",
+                        "actual": "1325\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1334",
+                        "actual": "1334",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1341",
+                        "actual": "1341",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1349",
+                        "actual": "1349\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1356",
+                        "actual": "1355\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1404",
+                        "actual": "1404",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1411",
+                        "actual": "1410\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1419",
+                        "actual": "1419",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1426",
+                        "actual": "1426",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1434",
+                        "actual": "1434",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1441",
+                        "actual": "1440\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1449",
+                        "actual": "1449",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1456",
+                        "actual": "1456",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1504",
+                        "actual": "1504",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1511",
+                        "actual": "1511",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1519",
+                        "actual": "1519",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1526",
+                        "actual": "1526",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1534",
+                        "actual": "1534",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1541",
+                        "actual": "1540\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1549",
+                        "actual": "1549",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1556",
+                        "actual": "1555\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1604",
+                        "actual": "1603\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1611",
+                        "actual": "1609",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": null,
+                        "actual": "1614",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 974.0
+                    },
+                    {
+                        "planned": "1620",
+                        "actual": "1619\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1626",
+                        "actual": "1626",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1632",
+                        "actual": "1632\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": null,
+                        "actual": null,
+                        "ran": false,
+                        "ontime": false,
+                        "delay": null
+                    },
+                    {
+                        "planned": "1638",
+                        "actual": "1649\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 11.5
+                    },
+                    {
+                        "planned": "1658",
+                        "actual": null,
+                        "ran": false,
+                        "ontime": false,
+                        "delay": null
+                    },
+                    {
+                        "planned": "1644",
+                        "actual": "1659",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 15.0
+                    },
+                    {
+                        "planned": "1653",
+                        "actual": "1702\u00bc",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 9.25
+                    },
+                    {
+                        "planned": "1703",
+                        "actual": "1713\u00bd",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 10.5
+                    },
+                    {
+                        "planned": "1708",
+                        "actual": "1715",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 7.0
+                    },
+                    {
+                        "planned": "1714",
+                        "actual": "1717\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 3.5
+                    },
+                    {
+                        "planned": "1720",
+                        "actual": "1720\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1725",
+                        "actual": "1724\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1730",
+                        "actual": "1728\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1735",
+                        "actual": "1734\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1740",
+                        "actual": "1739",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1745",
+                        "actual": "1745\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1750",
+                        "actual": "1749\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1755",
+                        "actual": "1753\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1800",
+                        "actual": "1759",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1805",
+                        "actual": "1803\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1810",
+                        "actual": "1809",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1815",
+                        "actual": "1813\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1820",
+                        "actual": "1819",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1825",
+                        "actual": "1825\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.25
+                    },
+                    {
+                        "planned": "1835",
+                        "actual": "1833",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1830",
+                        "actual": "1837",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 7.0
+                    },
+                    {
+                        "planned": "1840",
+                        "actual": "1841",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 1.0
+                    },
+                    {
+                        "planned": "1845",
+                        "actual": "1844",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1850",
+                        "actual": "1850",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1856",
+                        "actual": "1856",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1902",
+                        "actual": "1902",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.0
+                    },
+                    {
+                        "planned": "1914",
+                        "actual": "1913\u00bc",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1920",
+                        "actual": "1920\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0.5
+                    },
+                    {
+                        "planned": "1908",
+                        "actual": "1923",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 15.0
+                    },
+                    {
+                        "planned": "1926",
+                        "actual": "1925\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1932",
+                        "actual": "1937",
+                        "ran": true,
+                        "ontime": false,
+                        "delay": 5.0
+                    },
+                    {
+                        "planned": "1938",
+                        "actual": "1940\u00bd",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.5
+                    },
+                    {
+                        "planned": "1944",
+                        "actual": "1943\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 0
+                    },
+                    {
+                        "planned": "1950",
+                        "actual": "1952\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.75
+                    },
+                    {
+                        "planned": "1956",
+                        "actual": "1958\u00be",
+                        "ran": true,
+                        "ontime": true,
+                        "delay": 2.75
                     }
                 ]
             }
