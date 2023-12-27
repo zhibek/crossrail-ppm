@@ -58,6 +58,10 @@ def process_services(date, station_code, toc, origin=None, destination=None):
     raw = result.content
     parsed = json.loads(raw)
     results = parsed["services"]
+
+    if not results:
+        return []
+
     print("Found {} total services".format(len(results)))
 
     items = []
